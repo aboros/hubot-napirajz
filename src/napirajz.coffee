@@ -24,10 +24,10 @@ module.exports = (robot) ->
       .get() (error, resp, body) ->
         code = resp.statusCode
         if error
-          res.send "Alja egy geci világban élünk Tibor! #{error}"
+          res.send "Alja egy geci világban kell élnünk, Tibor! #{error}"
           return
         if code isnt 200
-          res.send "#{code} jött válasznak Klárabazmeg!"
+          res.send "Hogy sújt minket az a kurvaélet. #{code} jött válasznak!"
           return
         data = JSON.parse body
         dataKeys = []
